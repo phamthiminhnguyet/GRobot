@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--Font Raleway-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <link rel="stylesheet" href="css/app.css">
+    <title>TwoRobot</title>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark" id="navbar-example2">
+        <a class="navbar-brand" href="#">TwoRobot</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-l">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#storyline-l">Storyline</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#salvager-l">Salvager</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#qa-l">Q&A</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container-fluid">
+
+        <div class="row header-robot" id="home">
+            <img src="images/bc_mobi-01.png" alt="" class="bc-mobi">
+            <img src="images/img-header-01-01.png" alt="" width="100%" class="img-cover" height="auto">
+            <img src="images/img-1.png" alt="" class="green-robot" width="25%" data-aos="fade-up">
+            <img src="images/2.png" alt="" class="blue-robot" width="28%" data-aos="fade-up">
+            <div class="row r-h-m">
+                <div class="col-md-12 col-12 text-header" data-aos="fade-up">
+                    <h1 class="text-title">Two Robots. An original sci-fi game.</h1>
+                    <p class="text-sub">You may have played card games before. We have too. We couldn't find anything out there quite like this. Our game has just the right mix of speed, strategy, bluffing, and a hint of luck.</p>
+                    <p class="text-sub-sm" style="color: white;">Find out what's next.</p>
+                    <div class="input-group align-items-center">
+                        <input type="text" class="form-control" placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
+                        <button type="button" onclick="checkmail()" class="send-email align-self-center"><i class="fa fa-arrow-right fa-2x" aria-hidden="true" style="color: white;"></i></button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="row body-1 justify-content-center" id="about-l">
+            <img src="images/img-b1-02.png" alt="" width="100%" class="img-body-1">
+            <div class="row justify-content-center">
+                <div class="col-md-2 col-4 mobile-res" data-aos="fade-up">
+                    <img src="images/3.png" alt="" class="img-card">
+                    <img src="images/5.png" alt="" class="img-card">
+                </div>
+                <div class="col-md-2 col-4 padding-card mobile-res" data-aos="fade-up">
+                    <img src="images/4.png" alt="" class="img-card">
+                    <img src="images/6.png" alt="" class="img-card">
+                </div>
+                <div class="col-md-6 col-12 content-body-1" data-aos="fade-up">
+                    <p style="color: white; font-weight: bold;" id="about-text">ABOUT TWO ROBOTS</p>
+                    <h1 class="text-title-body">Stunning artwork and gameplay unlike any other.</h1>
+                    <svg height="3" width="74">
+                        <line x1="0" y1="0" x2="74" y2="0" style="stroke: #ea4753; stroke-width:3" />
+                    </svg>
+                    <p class="text-sub" id="text-sub-body">The year is 2876 on a far distant planet named Rennova. Humankind has emerged from their bunkers following the War of the Five Factions. Across the barren landscapes lie mountains of steel, fields of metal, and vast expanses of damaged robots. To help rebuild Rennova to its once great glory, humans worked alongside Salvagers. With disagreements about how to restore the planet, war broke out again between opposing tribes.</p>
+                    <button type="button" class="read-more" onclick="openifo()">Read more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row body-2" id="storyline-l">
+                <div class="col-md-6 col-12 text-center stories-content-box" data-aos="fade-up">
+                    <h1>Storyline</h1>
+                    <p style="opacity: .5;">
+                        How did it all begin? Be sure to check out our music track below!
+                    </p>
+                    <audio controls autoplay id="myAudio">
+                        <source src="audio/GameOfThrones.mp3" type="audio/mpeg">
+                    </audio>
+
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="row">
+                        <div class="slideshow-container">
+                            <div class="col-md-12 stories justify-content-center align-items-start" data-aos="fade-up">
+                                <div class="card">
+                                    <img src="images/s4.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">The first draft of Perstemico is complete. It is a massive ship unlike any before it, designed to hold up to 15,000 passengers.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/s2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Rockets are launched to intercept and redirect the meteor. People cheer as they watch the live stream.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/s7.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">The first draft of Perstemico is complete. It is a massive ship unlike any before it, designed to hold up to 15,000 passengers.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/s8.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Video arrives from the launched rockets as they approach their target. It becomes apparent that a miscalculation was made when the rockets crash land on the meteor's surface.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="images/s5.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Headlines begin appearing calling the ship "an escape for the wealthy"</p>
+                                    </div>
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                            <div class="col-md-12 ctrl-dot" data-aos="fade-up">
+                                <span class="dot" onclick="currentSlide(1)"></span> 
+                                <span class="dot" onclick="currentSlide(2)"></span> 
+                                <span class="dot" onclick="currentSlide(3)"></span> 
+                                <span class="dot" onclick="currentSlide(4)"></span> 
+                                <span class="dot" onclick="currentSlide(5)"></span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row how-toplay justify-content-center">
+                        <div class="col-md-2 col-6 mobile-res" data-aos="fade-up">
+                            <img src="images/7.png" alt="" class="img-play">
+                        </div>
+                        <div class="col-md-2 col-5 padding-card mobile-res" data-aos="fade-up">
+                            <img src="images/8.png" alt="" class="img-play">
+                        </div>
+                        <div class="col-md-5 text-play" data-aos="fade-up">
+                            <p style="color: white; font-weight: bold;" id="about-text">HOW TO PLAY</p>
+                            <h1 class="text-title-body">It is both a Battle Royale and a race to build two robots.</h1>
+                            <svg height="3" width="74">
+                                <line x1="0" y1="0" x2="74" y2="0" style="stroke: #ea4753; stroke-width:3" />
+                            </svg>
+                            <p class="text-sub" id="text-sub-body">Two Robots is a fast-paced, strategic card game of set collection and player elimination in a far distant future. Players in the game control Salvagers with special abilities attempting to build more robots than their friends. Be the first to eliminate all players or build Two Robots, the choice is yours.</p>
+                            <button class="read-more" onclick="openvideo()" type="button">See how to play</button>
+                        </div>                     
+                </div>
+                <img src="images/img-b2-02.png" alt="" width="100%" class="img-body-2">
+        </div>
+
+        <div class="row body-3" id="salvager-l">
+            <div class="col-md-12 col-12 text-center stories-content-box" data-aos="fade-up">
+                <h1>Salvagers</h1>
+                <p style="opacity: .5;">
+                    Learn more about the heroes and their origins.
+                </p>
+            </div>
+            <div class="col-md-12 btn-card" id="cardDiv" data-aos="fade-up">            
+                <img src="images/TheApocalypse.png" alt="" class="card-explore activeexp" onclick="showDesc(1)">
+                <img src="images/ThePeacemaker.png" alt="" class="card-explore" onclick="showDesc(2)">
+                <img src="images/TheSamurai.png" alt="" class="card-explore" onclick="showDesc(3)">
+                <img src="images/TheScavenger.png" alt="" class="card-explore" onclick="showDesc(4)">
+                <img src="images/TheLocked.png" alt="" class="card-explore" onclick="showDesc(5)">
+            </div>
+            <div class="row justify-content-center box-desc-card desc-ctrl">
+                    <div class="col-md-5" data-aos="fade-up">
+                        <img src="images/TheApocalypse.png" alt="" class="desc-card">
+                    </div>
+                    <div class="col-md-6 module" data-aos="fade-up">
+                        <div style="text-transform: uppercase;" class="module-text apocalypse-text">apocalypse</div>
+                        <p class="text-sub-desc">APOCALYPSE's anger is not too be underestimated. One wrong move is enough to have it blow up in everyone's faces.</p>
+                        <h1 class="backstory">Backstory</h1>
+                        <p class="text-sub-desc">A prototype XI-12 nuclear robot constructed by Aatish Rao locked away after an unintended meltdown. As Agseva prepared for war, the powers-that-were remembered the stories of the XI-12 behaving strangely centuries before. Surely, it was decommissioned, they thought. To the surprise of the Agsevan government, the robot was still operational... and unexpectedly wrathful, fueled by what it perceived as betrayal from its creator and its anger toward everyone who shunned it. The robot agreed to fight for Agseva only after it was offered a heavily reconstructed frame, one that would eliminate its previous weaknesses. Taking the new name APOCALYPSE, its wrath is not easily contained. It still plays by it's own rules most of the time. Possible sequel arc would have APOCALYPSE defecting from its deal with the Agsevan government literally out of boredom and starting its own war.</p>
+                    </div>              
+            </div>
+            <div class="row justify-content-center box-desc-card">
+                <div class="col-md-5">
+                    <img src="images/ThePeacemaker.png" alt="" class="desc-card" data-aos="fade-up">
+                </div>
+                <div class="col-md-6 module" data-aos="fade-up">
+                    <div style="text-transform: uppercase;" class="module-text peacemaker-text">peacemaker</div>
+                    <div class="text-sub-desc">PEACEMAKER only hopes it can survive long enough to establish peace in the new world. Attacking isn't in its game plan.</div>
+                    <div class="backstory">Backstory</div>
+                    <p class="text-sub-desc">Constructed by a group of scientists from each faction to reunite the planet. It contains a Knowledge Orb implanted with information given by each faction. Once tensions grew, the factions removed the robot's access to their information, leaving its "mind" focused on the initial purpose of keeping peace. It is only involved in the War to protect those who flocked to it for safety. Discussed character arc is the search for the Faction Data Shards. The Peacemaker feels something missing and decides to search for knowledge.</p>
+                </div>              
+            </div>
+            <div class="row justify-content-center box-desc-card">
+                <div class="col-md-5">
+                    <img src="images/TheSamurai.png" alt="" class="desc-card">
+                </div>
+                <div class="col-md-6 module">
+                    <div style="text-transform: uppercase;" class="module-text samurai-text">samurai</div>
+                    <div class="text-sub-desc">SAMURAI is quick to strike down anything or anyone in its path. His deadly Katana allows him to double-attack his enemies.</div>
+                    <div class="backstory">Backstory</div>
+                    <p class="text-sub-desc">Created as a symbol of the Ohmni Resistance's loyalty to their creed, "True to ourselves. True to our own. Our freedoms and fates rest in our hands alone." Wielding a massive electrified katana, it would also serve as the Resistance's protection against all forces the group believed would attempt to silence their message. Though the Resistance itself was met with mixed reactions from the Lysafar residents, SAMURAI quickly became the face of the faction as it was built for combat from the start. Lysafar was in no position to refuse this decision as they had not planned a proper defense. Possible sequel arc would follow SAMURAI's thought process over the Resistance's creed, debating whether its loyalty lies with the creators or with its kind.</p>
+                </div>              
+            </div>
+            <div class="row justify-content-center box-desc-card">
+                <div class="col-md-5">
+                    <img src="images/TheScavenger.png" alt="" class="desc-card">
+                </div>
+                <div class="col-md-6 module">
+                    <div style="text-transform: uppercase;" class="module-text sc-text">scadvenger</div>
+                    <div class="text-sub-desc">SCAVENGER was built with to be quick and adaptable. It can scrounge up parts from the Rennovan wasteland better than anyone else.</div>
+                    <div class="backstory">Backstory</div>
+                    <p class="text-sub-desc">The very first Robot, MEC-0001, constructed by SURPASS during the Industrial Revelation, and the first Sentient, a term used by Rennovan scientists. It gained Sentience by listening to the conversations of its diagnostician, and because of this, it was the only MECbot aware of its imminent destruction and the only one that tried to escape. This attempt intrigued the scientists present that day. Rather than destroying the robot, they began conducting studies on the robot, trying to figure out how it was that aware of its situation. This lasted for a few centuries as no one could ever find what they were looking for.</p>
+                </div>              
+            </div>
+            <div class="row justify-content-center box-desc-card">
+                <div class="col-md-5">
+                    <img src="images/TheLocked.png" alt="" class="desc-card">
+                </div>
+                <div class="col-md-6 module">
+                    <div style="text-transform: uppercase;" class="module-text locked-text">locked</div>
+                    <div class="text-sub-desc">This Salvager is locked.</div>
+                    <div class="backstory">Backstory</div>
+                    <p class="text-sub-desc">Backstory unknown.</p>
+                </div>              
+            </div>
+        </div>
+
+        <div class="row QnA justify-content-center" id="qa-l">
+            <img src="images/img-b4-02.png" alt="" width="100%" height="auto" class="img-footer">
+            <div class="col-md-6 left-QnA" id="accordion" data-aos="fade-up">
+                <p style="color: rgb(201, 201, 201); font-weight: bold;" id="about-text">LEARN MORE</p>
+                <h1 class="qna-title">Frequently Asked Questions</h1>
+
+                <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Where can I purchase the game?</button>
+                <div id="demo1" class="collapse text-sub-desc show"  data-parent="#accordion">
+                    We recently just finished our Kickstarter campaign and are funded! If you are interested in pre-ordering the game, you can do so here. Also, stay tuned for updates by reading our blog!
+                </div>
+                <button type="button" class="btn btn-primary collapsed" data-toggle="collapse" data-target="#demo2">What about player support? Card count? Is the game even fun?</button>
+                <div id="demo2" class="collapse text-sub-desc"  data-parent="#accordion">
+                    Two Robots supports 2-4 players. The box comes with 4 Salvager Robot cards, 18 Event Cards, and 100 Action cards. The Action cards consist of Attack, Defense, and Robot Part cards. We designed it to be the perfect blend of fun, fast-paced, easy to learn, and strategic card game!
+                </div>
+                <button type="button" class="btn btn-primary collapsed" data-toggle="collapse" data-target="#demo3">What is the Storyline of Two Robots?</button>
+                <div id="demo3" class="collapse text-sub-desc"  data-parent="#accordion">
+                    Our team wrote up a really awesome backstory to allow our game to be much more immersive. We are also planning on releasing other games and products in the future in the same universe so stay tuned!
+                </div>
+            </div>
+            <div class="col-md-6 text-center right-qna">
+                <img src="images/10.png" alt="" class="img-card f-im-l">
+                <img src="images/9.png" alt="" class="img-card f-im-r">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 footer">
+                <p class="copyright">&copy; Copyright by <span style="color: rgb(255, 166, 32);">Thoheuuu</span></p>
+                <i class="fa fa-facebook item-footer" aria-hidden="true"></i>
+                <i class="fa fa-google-plus item-footer" aria-hidden="true"></i>
+                <i class="fa fa-linkedin item-footer" aria-hidden="true"></i>
+                <i class="fa fa-twitter item-footer" aria-hidden="true"></i>
+                <i class="fa fa-tumblr item-footer" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="video-howtoplay">
+            <div class="fix-video">
+                <span class="close" onclick="closeVideo()">&times;</span>
+                <iframe class="video-main" src="https://www.youtube.com/embed/01TWEJ7NrsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>    
+        </div>    
+        <div class="detail-story">
+            <div class="glass-board">
+                <div class="text-board">
+                    <span class="close-board" onclick="closeVideo()">&times;</span>
+                    <h1 class="title-board">Welcome to Two Robots</h1>
+                    <p class="sub-board">If you're coming from the front page, this is what artificial intelligence told us people would want:</p>
+                    <ul>
+                        <li>🧤 "Really Sweet Gloves"</li>
+                        <li>👽 "Players Being Abducted"</li>
+                        <li>❄️ "Stuff Getting Frozen"</li>
+                        <li>🚀 "Cool Freaking Gunships"</li>
+                    </ul>
+                    <p class="sub-board">So we just went with that and BOOM, Two Robots the Card Game was born. 😆</p> 
+                    <p class="sub-board">Hello there! Welcome to the Two Robots blog and universe. 
+                        We plan to use this platform to deliver the latest content within our game including history, 
+                        updates on production, and the creative process. 
+                        Additionally -- we plan on dropping any knowledge on our findings with fulfillment companies 
+                        and the card printing process. We are using this blog to be the center of gravity for our 
+                        digital house. We hope you enjoy it :)
+                    </p>
+                    <h1 class="title-board">Where did Two Robots Come From?</h1>
+                    <p class="sub-board">As pretty hardcore board gamers, the Two Robots team all sit down about once a week for 
+                        a board game night. Over the years we have played many games, from party games to hero 
+                        based games like Gloomhaven. What we have noticed, and something that we desired, 
+                        is a party game that is quick but also has a lot of depth in strategy. 
+                        We wanted it to be set in the future, with a seriously killer storyline and graphics to boot. 
+                        When we first set out to start this project, we were completely unaware of how difficult it is 
+                        to come up with a game that is actually fun. Future blog posts will be detailing the creative 
+                        effort, so you all can experience what it’s like to create a game! Through hours of play testing 
+                        with friends, family, and even strangers (thanks Craigslist!) we think we have come up with 
+                        something great. We can't wait to share this world with you, from the story to the game mechanics, 
+                        to eventually seeing all of you play it.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" style="overflow: hidden">
+            <i class="fa fa-chevron-up" aria-hidden="true" id="gotop"></i>
+        </button>
+    </div>
+    <script>   
+        AOS.init();
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
